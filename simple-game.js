@@ -236,9 +236,9 @@ function Coin(pos) {
 Coin.prototype.type = "coin";
 
 Coin.prototype.act = function(step) {
-  // this.wobble += step * wobbleSpeed;
-  // var wobblePos = Math.sin(this.wobble) * wobbleDist;
-  // this.pos = this.basePos.plus(new Vector(0, wobblePos));
+  this.wobble += step * wobbleSpeed;
+  var wobblePos = Math.sin(this.wobble) * wobbleDist;
+  this.pos = this.basePos.plus(new Vector(0, wobblePos));
 }
 
 
